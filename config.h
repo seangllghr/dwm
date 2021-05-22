@@ -253,6 +253,7 @@ static Key keys[] = {
 
 	{ 0,				XK_Print,	spawn,		SHCMD("maim pic-full-$(date '+%y%m%d-%H%M-%S').png") },
 	{ ShiftMask,		XK_Print,	spawn,		SHCMD("maimpick") },
+	{ Mod1Mask,			XK_Print,	spawn,		SHCMD("maim -i $(xdotool getactivewindow) ~/Pictures/$(date '+%Y%m%d-%H%M%S').png") },
 	{ MODKEY,			XK_Print,	spawn,		SHCMD("dmenurecord") },
 	{ MODKEY|ShiftMask,	XK_Print,	spawn,		SHCMD("dmenurecord kill") },
 	{ MODKEY,			XK_Delete,	spawn,		SHCMD("dmenurecord kill") },
